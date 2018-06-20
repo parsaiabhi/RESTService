@@ -7,7 +7,16 @@ public class BusService {
 	private Ticket ticket;
 	private String  busNo;
 	private String busDriverName;
+	private String busChasesNo;
 	
+	
+	
+	public String getBusChasesNo() {
+		return busChasesNo;
+	}
+	public void setBusChasesNo(String busChasesNo) {
+		this.busChasesNo = busChasesNo;
+	}
 	public Ticket getTicket() {
 		return ticket;
 	}
@@ -28,7 +37,8 @@ public class BusService {
 	}
 	@Override
 	public String toString() {
-		return "BusService [ticket=" + ticket + ", busNo=" + busNo + ", busDriverName=" + busDriverName + "]";
+		return "BusService [ticket=" + ticket + ", busNo=" + busNo + ", busDriverName=" + busDriverName
+				+ ", busChasesNo=" + busChasesNo + "]";
 	}
 	
 	
